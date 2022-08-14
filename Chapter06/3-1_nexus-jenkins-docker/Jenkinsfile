@@ -1,4 +1,4 @@
-def mainDir="Part2_Docker/Chapter06/3-1_nexus-jenkins-docker"
+def mainDir="Chapter06/3-1_nexus-jenkins-docker"
 def region="ap-northeast-2"
 def nexusUrl="ec2-3-37-17-137.ap-northeast-2.compute.amazonaws.com:5000"
 def repository="test"
