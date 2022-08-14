@@ -29,7 +29,7 @@ pipeline {
             steps {
                 sh """
                     cd ${mainDir}
-                    docker login -u ${nexusid} -p ${nexuspw} ${nexusUrl}
+                    docker login localhost:5000
                     ./gradlew jib -Djib.to.image=${nexusUrl}/${repository}:${tagName} -Djib.console='plain'
                 """
             }
