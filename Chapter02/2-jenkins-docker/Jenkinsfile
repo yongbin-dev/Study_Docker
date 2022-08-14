@@ -18,7 +18,6 @@ pipeline {
             steps {
                 sh """
                 cd ${mainDir}
-                sudo chmod 755 ./gradlew
                 ./gradlew clean build
                 """
             }
